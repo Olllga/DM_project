@@ -8,7 +8,11 @@ This work is centered on the paper by [Reiichiro Nakano, **"Neural Painters: A l
 
 <h4 align="center">A set of 12 example stroke images</h4>
 <p align="center">
+<<<<<<< HEAD
   <img width="900" height="380" src="/images/readme_images/dataset_examples.png">
+=======
+  <img width="900" height="380" src="/example_imgs.png">
+>>>>>>> 1b410d822567b3c15865c00a285b10d2419b130b
 </p>
 
 ## Author
