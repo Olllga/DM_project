@@ -46,5 +46,25 @@ Examples of the stroke images are printed below:
   <img src="/images/readme_images/dataset_examples.png" width="640" height="320"/>
 </p>
 
+### Implementation
+
+Implementation is split into 4 Colaboratory notebooks containing each its own model. 
+
+Code contained in each notebook performs:
+- *loading* of the appropriate input data,
+- *defining the model*,
+- *training*,
+- *printing/saving* of the results.
+
+These models are the self-sufficient components of an **inheritive 4-block architecture** of the painting agent, which is described in details in the following section. 
+
+Notebooks are stored in a [```scripts/```](https://github.com/Olllga/DM_project/tree/main/scripts) folder:
+1. [generator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/generator.ipynb) - code for the **Generator** model training;
+2. [discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb) - code for the **Discriminator** model training;
+3. [gan.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/gan.ipynb) - code for the **Generative Adversarial Network** training;
+4. [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb) - code for the **Intrinsic Style Transfer** model training.
+
+Best weights of the models are available for loading from the [```models/```](https://github.com/Olllga/DM_project/tree/main/models) folder.
+
 ## Author
 - Olga Sorokoletova - 1937430
