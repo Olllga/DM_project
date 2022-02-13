@@ -15,7 +15,7 @@ The core idea behind the Neural Painters technology is to provide **the painter 
 The following **4 source images** have been borrowed from the repository of the original paper and preprocessed to be for testing of the built models and experimenting with the results:
 
 <p align="center">
-  <img src="/images/source_images/vanc.jpg" width="275" height="168"/><img src="/images/source_images/louvre.png" width="212" height="168"/> <img src="/images/source_images/eiffel.jpeg" width="168" height="168"/> <img src="/images/source_images/castle.png" width="168" height="168"/> 
+  <img src="/images/source_images/vanc.jpg" width="247" height="151"/><img src="/images/source_images/louvre.png" width="190" height="151"/> <img src="/images/source_images/eiffel.jpeg" width="151" height="151"/> <img src="/images/source_images/castle.png" width="151" height="151"/> 
 </p>
 
 
