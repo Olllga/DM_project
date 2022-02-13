@@ -18,6 +18,33 @@ The following **4 source images** have been borrowed from the repository of the 
   <img src="/images/source_images/vanc.jpg" width="247" height="151"/><img src="/images/source_images/louvre.png" width="190" height="151"/> <img src="/images/source_images/eiffel.jpeg" width="151" height="151"/> <img src="/images/source_images/castle.png" width="151" height="151"/> 
 </p>
 
+### Dataset
+Dataset is not stored in the project repository due to its large memory consumption, but can be downloaded from the corresponding Kaggle web-page [**MyPaintBrushstrokes**](https://www.kaggle.com/reiinakano/mypaint_brushstrokes) as:
+
+```!kaggle datasets download -d reiinakano/mypaint_brushstrokes```
+
+It is structured in the following way:
+
+|        Name         | N samples | File size |
+| -----------------   |:---------:|:---------:|
+|```episodes_0.npz``` |   100000  |  196.3MB  |
+|        ...          |    ...    |    ...    |
+|```episodes_77.npz```|   100000  |  196.3MB  |
+
+```episodes_0.npz```, ```episodes_1.npz```, ```episodes_2.npz``` were mainly used in the project.
+
+
+Each data sample is represented by **action** and the **stroke**. 
+From the semantical point of view given action realizes given stroke, and
+
+- **action:** array of length ```12```,
+- **stroke:** RGB image with ```(img_width, img_height) = (64, 64)```.
+
+Examples of the stroke images are printed below:
+
+<p align="center">
+  <img src="/images/readme_images/dataset_examples.png" width="640" height="320"/>
+</p>
 
 ## Author
 - Olga Sorokoletova - 1937430
