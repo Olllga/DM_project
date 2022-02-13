@@ -2,14 +2,22 @@
 
 This is the repository of the project proposed for the course of *Data Mining*.
 
-This work is centered on the paper by [Reiichiro Nakano, **"Neural Painters: A learned differentiable constraint for generating brushstroke paintings"** (2019)](https://arxiv.org/abs/1904.08410) and [**MyPaintBrushstrokes**](https://www.kaggle.com/reiinakano/mypaint_brushstrokes) dataset.
+This work is centered on the idea of **Intrinsic Style Transfer** from the paper by [Reiichiro Nakano, **"Neural Painters: A learned differentiable constraint for generating brushstroke paintings"** (2019)](https://arxiv.org/abs/1904.08410) and [**MyPaintBrushstrokes**](https://www.kaggle.com/reiinakano/mypaint_brushstrokes) dataset.
 
-## Results
+## Introduction
 
-<h4 align="center">A set of 12 example stroke images</h4>
+The core idea behind the Neural Painters technology is to provide **the painter agent** trained to generate the source image as a painting in a stroke-by-stroke fashion as a human artist would do.
+
+```Input: source image.```
+
+```Output: painting of this image by brushstrokes```.
+
+The following **4 source images** have been borrowed from the repository of the original paper and preprocessed to be for testing of the built models and experimenting with the results:
+
 <p align="center">
-  <img width="780" height="380" src="images/readme_images/dataset_examples.png">
+  <img src="/images/source_images/vanc.jpg" width="275" height="168"/><img src="/images/source_images/louvre.png" width="212" height="168"/> <img src="/images/source_images/eiffel.jpeg" width="168" height="168"/> <img src="/images/source_images/castle.png" width="168" height="168"/> 
 </p>
+
 
 ## Author
 - Olga Sorokoletova - 1937430
