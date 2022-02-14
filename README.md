@@ -6,7 +6,7 @@ This work is centered on the idea of **Intrinsic Style Transfer** from the paper
 
 ## Introduction
 
-While working on a painting-like image generation, authors of the reference paper aim to achieve the best possible level of **naturality** in this process. The most of the other state-of-the-art techniques don not focus on naturality and therefore do not provide this desired property, because they generate images by having a network directly calculate the RGB value of each pixel. However, artists don’t paint by generating each individual pixel, they paint by generating brushstrokes.
+While working on a painting-like image generation, author of the reference paper aims to achieve the best possible level of **naturality** in this process. The most of the other state-of-the-art techniques don not focus on naturality and therefore do not provide this desired property, because they generate images by having a network directly calculate the RGB value of each pixel. However, artists don’t paint by generating each individual pixel, they paint by generating brushstrokes.
 
 The core idea behind the Neural Painters technology is to provide **the painter agent** trained to generate the source image as a painting in a stroke-by-stroke fashion as a human artist would do.
 
