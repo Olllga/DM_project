@@ -250,16 +250,49 @@ ___
   <img src="/images/loss_plots/paint_50s_3000e_4seed.png" width="393" height="278"/>
 </p>
 
+## Conclusion
+
+### Video Gallery
+
+Finally, we can follow the process of painting. All the generated videos can be found in ```.mp4``` format in the corresponding folder: [```videos/```](https://github.com/Olllga/DM_project/tree/main/videos).
+
+#### Progress of the final canvas with a training time
+
+<p align="center">
+  <img src="/videos/training canvas evolution/vanc_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/louvre_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/eiffel_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/castle_train.gif" width="128" height="64"/>
+</p>
+
+#### Painting evolution of the final canvas of each source image in a stroke-by-stroke fashion
+
+<p align="center">
+  <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
+</p>
+
+For the further insights please refer the printed history in [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb).
+
+### Log Tables
+
+#### Hyperparameters
+
+|Model          | N features | Batch size |N epochs|Optimizer params            |
+| ---------     |:----------:|:----------:|:------:|:---------------------------|
+|*Generator*    |512         |256         |15      |Adam : 0.001 : (0.5, 0.9))  |
+|*Discriminator*|-           |512         |10      |Adam : 0.001 : (0.5, 0.999))|
+|*GAN*          |-           |256         |2       |Adam : 0.0001 : (0.5, 0.9)) |
+|*Painter*      |50          |128         |3000    |RMSprop : 0.01              |
+
+#### Execution time
+
+|Model          | Time       |N epochs|Exec speed (min/epoch)      |
+| ---------     |:----------:|:------:|:--------------------------:|
+|*Generator*    |~ 5h        |15      |20                          |
+|*Discriminator*|~ 30 min    |10      |3                           |
+|*GAN*          |~ 20 min    |2       |10                          |
+|*Painter*      |~ 10-15 min |3000    |0.003-0.005                 |
 
 
-
-
-
-
-
-
-
-
+### Further Developments
+- To **penalize Discriminator** for the sake of GAN balancing.
 
 ## Author
 - Olga Sorokoletova - 1937430
