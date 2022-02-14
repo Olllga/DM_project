@@ -241,7 +241,7 @@ ___
 ```Output: stroke-by-stroke painting for the source image```.
 
 <p align="center">
-  <img src="/images/readme_images/block_schemes/paint.png" width="579" height="540"/>
+  <img src="/images/readme_images/block_schemes/paint.png" width="562" height="534"/>
 </p>
 
 - **Generator block:** loaded Generator from the Model 3.
