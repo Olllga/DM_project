@@ -295,7 +295,7 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 |*Generator*    |512         |256         |15      |Adam : 0.001 : (0.5, 0.9))  |
 |*Discriminator*|-           |512         |10      |Adam : 0.001 : (0.5, 0.999))|
 |*GAN*          |-           |256         |2       |Adam : 0.0001 : (0.5, 0.9)) |
-|*Painter*      |50          |128         |3000    |RMSprop : 0.01              |
+|*Painter*      |            |50         |3000    |RMSprop : 0.01              |
 
 #### Execution time
 
