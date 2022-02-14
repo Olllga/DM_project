@@ -250,7 +250,7 @@ ___
 
 #### Results
 
-##### Generated Strokes
+##### Painted Images
 
 <p align="center">
   <img src="/images/painted_images/painted_vanc_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_louvre_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_eiffel_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_castle_50s_3000e_4seed.png" width="64" height="64"/>
