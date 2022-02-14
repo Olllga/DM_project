@@ -291,16 +291,16 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 #### Hyperparameters
 
 |Model          | N features | Batch size |N epochs|Optimizer params            |
-| ---------     |:----------:|:----------:|:------:|:---------------------------|
+|---------------|:----------:|:----------:|:------:|:---------------------------|
 |*Generator*    |512         |256         |15      |Adam : 0.001 : (0.5, 0.9))  |
 |*Discriminator*|-           |512         |10      |Adam : 0.001 : (0.5, 0.999))|
 |*GAN*          |-           |256         |2       |Adam : 0.0001 : (0.5, 0.9)) |
-|*Painter*      |            |50         |3000    |RMSprop : 0.01              |
+|*Painter*      |-           |50          |3000    |RMSprop : 0.01              |
 
 #### Execution time
 
 |Model          | Time       |N epochs|Exec speed (min/epoch)      |
-| ---------     |:----------:|:------:|:--------------------------:|
+|---------------|:----------:|:------:|:--------------------------:|
 |*Generator*    |~ 5h        |15      |20                          |
 |*Discriminator*|~ 30 min    |10      |3                           |
 |*GAN*          |~ 20 min    |2       |10                          |
@@ -311,6 +311,7 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 - Invent the best strategy to **penalize the Discriminator** for the GAN balancing.
 - **Smoothing effect** handling.
 - Work on **larger scales**.
+- **Finding new styles** by applying different constraints or using different artistic mediums.
 
 ## Author
 - Olga Sorokoletova - 1937430
