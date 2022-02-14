@@ -195,6 +195,8 @@ ___
   <img src="/images/gen_strokes_images/GAN_generator_2e.jpeg" width="1082" height="192"/>
 </p>
 
+**Smoothing effect:** Instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN chooses to smooth them out. Depending on the application this can be or not to be a problematic nuance.
+
 ##### Train Loss
 
 <p align="center">
@@ -302,7 +304,9 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 
 
 ### Further Developments
-- To **penalize Discriminator** for the sake of GAN balancing.
+- Invent the best strategy to **penalize the Discriminator** for the GAN balancing.
+- **Smoothing effect** handling.
+- Work on **larger scales**.
 
 ## Author
 - Olga Sorokoletova - 1937430
