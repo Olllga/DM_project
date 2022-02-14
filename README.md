@@ -68,7 +68,7 @@ Notebooks are stored in a [```scripts/```](https://github.com/Olllga/DM_project/
 1. [generator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/generator.ipynb) - code for the **Generator** model training;
 2. [discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb) - code for the **Discriminator** model training;
 3. [gan.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/gan.ipynb) - code for the **Generative Adversarial Network** training;
-4. [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb) - code for the **Intrinsic Style Transfer** model training.
+4. [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb) - code for the **Intrinsic Style Transfer** model training, where Intrinsic Style Transfer is exactly the methodology defined in the reference paper.
 
 Best weights of the models are available for loading from the [```models/```](https://github.com/Olllga/DM_project/tree/main/models) folder.
 
@@ -240,7 +240,7 @@ ___
 
 - **Generator block:** loaded Generator from the Model 3.
 - **Feature extractor:** to extract image features VGG19 is loaded as pre-trained.
-- **Feature loss:** is used to update actions.
+- **Feature loss:** is used to update actions: we optimize brushstrokes to minimize only the content loss.
 
 #### Results
 
@@ -257,6 +257,10 @@ ___
 </p>
 
 ## Conclusion
+
+The nature of the technology is such that we paint **the high-level features** of a target image. That introduces limitation on the level of subtlety of the source image. Additionally, **the artistic medium (brushstrokes), dictates the style** of the resulting image. 
+
+However, when satisfied with constraints on the input and output domains, the results of painting are pretty impressive. Let's take a look at them in the video gallery.
 
 ### Video Gallery
 
