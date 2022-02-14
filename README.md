@@ -43,7 +43,7 @@ It is structured in the following way:
 Each data sample is represented by **action** and the **stroke**. 
 From the semantical point of view given action realizes given stroke, and
 
-- **action:** array of length ```12```,
+- **action:** array of ```12``` control inputs: ```[pressure_start, pressure_end, brush_size, r, g, b, x_start, y_start, x_end, y_end, x_mid, y_mid]```.
 - **stroke:** RGB image with ```(img_width, img_height) = (64, 64)```.
 
 Examples of the stroke images are printed below:
