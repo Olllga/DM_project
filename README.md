@@ -195,7 +195,9 @@ ___
   <img src="/images/gen_strokes_images/GAN_generator_2e.jpeg" width="1082" height="192"/>
 </p>
 
-**Smoothing effect:** Instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN chooses to smooth them out. Depending on the application this can be or not to be a problematic nuance.
+The quality of the generated strokes is good and in general model is **able to capture the irregularities**. 
+
+However, there is the slight **smoothing effect:** instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN chooses to smooth them out. Depending on the application this can be or not to be a problematic nuance.
 
 ##### Train Loss
 
