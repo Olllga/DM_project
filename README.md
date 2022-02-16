@@ -104,7 +104,9 @@ ___
   <img src="/images/readme_images/block_schemes/generator.png" width="574" height="535"/>
 </p>
 
-- **Generator block:** fully-connnected layer + CNN.
+- **Generator block:** fully-connnected layer + CNN, where all non-residual convolutional layers are followed by spatial
+batch normalization and ReLU nonlinearities with the exception of the output layer, which instead uses a scaled tanh to ensure that the output image has
+pixels in the range [0, 255]
 - **Feature extractor:** to extract image features VGG19 is loaded as pre-trained.
 - **Feature loss:** is another important technology which is used in the project.
 
