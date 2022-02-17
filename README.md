@@ -210,7 +210,7 @@ In the first versions of the project, there was the slight **smoothing effect:**
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/GAN_2022-02-16 23_45_00_4e_930seed.png" width="390" height="278"/>
+  <img src="/images/loss_plots/2022-02-16 23_25_55.213994_5e_4seed.png" width="390" height="278"/>
 </p>
 
 ### Model 4: Painter
