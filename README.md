@@ -21,7 +21,7 @@ The following **4 source images** have been used for testing of the built models
 ```Output: painting of this image by brushstrokes```.
 
 <p align="center">
-  <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
+  <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
 </p>
 
 ### Dataset
@@ -129,7 +129,7 @@ ___
 ##### Generated Strokes
 
 <p align="center">
-  <img src="/images/gen_strokes_images/generator_5152w_15e_1d_best.jpeg" width="1024" height="539"/>
+  <img src="/images/gen_strokes_images/generator_2022-02-16 23_49_00_15e_4seed (1).png" width="1024" height="513"/>
 </p>
 
 ##### Train Loss
@@ -262,10 +262,14 @@ ___
   <img src="/images/painted_images/painted_vanc_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_louvre_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_eiffel_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_castle_50s_3000e_4seed.png" width="64" height="64"/>
 </p>
 
+<p align="center">
+  <img src="/images/painted_images/painted_vanc_2022-02-17 03_05_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_louvre_2022-02-17 03_13_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_eiffel_2022-02-17 03_20_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_castle_2022-02-17 03_28_00_3000e_4seed.png" width="64" height="64"/>
+</p>
+
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/paint_50s_3000e_4seed.png" width="393" height="278"/>
+  <img src="/images/loss_plots/paint_2022-02-17 03_28_00_3000e_4seed.png" width="393" height="278"/>
 </p>
 
 ## Conclusion
@@ -284,10 +288,18 @@ Finally, we can follow the process of painting. All the generated videos can be 
   <img src="/videos/training canvas evolution/vanc_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/louvre_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/eiffel_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/castle_train.gif" width="128" height="64"/>
 </p>
 
+<p align="center">
+  <img src="/videos/training canvas evolution/vanc_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/louvre_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/eiffel_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/castle_train1.gif" width="128" height="64"/>
+</p>
+
 #### Painting evolution of the final canvas of each source image in a stroke-by-stroke fashion
 
 <p align="center">
   <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
+</p>
+
+<p align="center">
+  <img src="/videos/painting stroke by stroke/vanc_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final1.gif" width="128" height="64"/>
 </p>
 
 For the further insights please refer the printed history in [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb).
@@ -310,7 +322,7 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 |*Generator*    |~ 5h          |15      |20                          |
 |*Discriminator*|~ 1h          |10      |6                           |
 |*GAN*          |~ 2.5h        |5       |30                          |
-|*Painter*      |~ 10-15 min   |3000    |0.003-0.005                 |
+|*Painter*      |~ 10 min      |3000    |0.003                       |
 
 
 ### Further Developments
