@@ -141,7 +141,7 @@ ___
 ### Model 2: Discriminator
 
 #### Code and best learnt weights: 
-[discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb), [discriminator parameters](https://github.com/Olllga/DM_project/blob/main/models/discriminator_10e.pth.pth).
+[discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb), [discriminator parameters](https://github.com/Olllga/DM_project/blob/main/models/discriminator_2022-02-16%2021_27_00_10e_877seed.pth).
 
 #### Architecture
 
@@ -162,7 +162,7 @@ ___
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/discriminator_2e_10seed.png" width="392" height="278"/>
+  <img src="/images/loss_plots/discriminator_2022-02-16 21_27_00_10e_877seed.png" width="390" height="278"/>
 </p>
 
 ### Model 3: GAN
@@ -199,9 +199,9 @@ Unlike a regular GAN, we **do not inject noise** into the input of the Generator
   <img src="/images/gen_strokes_images/GAN_generator_2e.jpeg" width="1082" height="192"/>
 </p>
 
-The quality of the generated strokes is good and in general model is **able to capture the irregularities**. 
+The quality of the generated strokes is good and model is **able to capture the irregularities**. 
 
-However, there is the slight **smoothing effect:** instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN chooses to smooth them out. Depending on the application this can be or not to be a problematic nuance.
+In the first versions of the project, there was the slight **smoothing effect:** instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN choose to smooth them out. Depending on the application this can be or not to be a problematic nuance. The problem was addressed introducing penalty for the Discriminator.
 
 ##### Train Loss
 
@@ -290,28 +290,27 @@ For the further insights please refer the printed history in [paint_image.ipynb]
 
 ### Log Tables
 
-#### Hyperparameters
+#### Hyperparameters (of the best performing models)
 
-|Model          | N features | Batch size |N epochs|Optimizer params            |
-|---------------|:----------:|:----------:|:------:|:---------------------------|
-|*Generator*    |512         |256         |15      |Adam : 0.001 : (0.5, 0.9))  |
-|*Discriminator*|-           |512         |10      |Adam : 0.001 : (0.5, 0.999))|
-|*GAN*          |-           |256         |2       |Adam : 0.0001 : (0.5, 0.9)) |
-|*Painter*      |-           |50          |3000    |RMSprop : 0.01              |
+|Model          | N features | Batch size |N epochs|Optimizer params             |Dropout |
+|---------------|:----------:|:----------:|:------:|:----------------------------|:------:|
+|*Generator*    |512         |256         |15      |Adam : 0.001 : (0.5, 0.9))   |-       |
+|*Discriminator*|-           |128         |10      |Adam : 0.000002 : (0.3, 0.7))|0.15-0.3|
+|*GAN*          |-           |256         |2       |Adam : 0.0001 : (0.5, 0.9))  |0.15-0.3|
+|*Painter*      |-           |50          |3000    |RMSprop : 0.01               |-       |
 
 #### Execution time
 
 |Model          | Time       |N epochs|Exec speed (min/epoch)      |
 |---------------|:----------:|:------:|:--------------------------:|
 |*Generator*    |~ 5h        |15      |20                          |
-|*Discriminator*|~ 30 min    |10      |3                           |
+|*Discriminator*|~ 1h        |10      |6                           |
 |*GAN*          |~ 20 min    |2       |10                          |
 |*Painter*      |~ 10-15 min |3000    |0.003-0.005                 |
 
 
 ### Further Developments
-- Invent the best strategy to **penalize the Discriminator** for the GAN balancing.
-- **Smoothing effect** handling.
+- Continue working on the **GAN balancing**.
 - Work on **larger scales**.
 - **Finding new styles** by applying different constraints or using different artistic mediums.
 
