@@ -64,17 +64,17 @@ Code contained in each notebook performs:
 
 These models are the self-sufficient components of an **inheritive 4-block architecture** of the painting agent, which is described in details in the following section. 
 
-Notebooks are stored in a [```scripts/```](https://github.com/Olllga/DM_project/tree/main/scripts) folder:
-1. [generator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/generator.ipynb) - code for the **Generator** model training;
-2. [discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb) - code for the **Discriminator** model training;
-3. [gan.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/gan.ipynb) - code for the **Generative Adversarial Network** training;
-4. [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb) - code for the **Intrinsic Style Transfer** model training, where Intrinsic Style Transfer is exactly the methodology defined in the reference paper.
+Notebooks are stored in a [```scripts/```](https://github.com/olga-sorokoletova/Data-Mining/tree/main/Project/scripts) folder:
+1. [generator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/generator.ipynb) - code for the **Generator** model training;
+2. [discriminator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/discriminator.ipynb) - code for the **Discriminator** model training;
+3. [gan.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/gan.ipynb) - code for the **Generative Adversarial Network** training;
+4. [paint_image.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/paint_image.ipynb) - code for the **Intrinsic Style Transfer** model training, where Intrinsic Style Transfer is exactly the methodology defined in the reference paper.
 
-Best weights of the models are available for loading from the [```models/```](https://github.com/Olllga/DM_project/tree/main/models) folder.
+Best weights of the models are available for loading from the [```models/```](https://github.com/olga-sorokoletova/Data-Mining/tree/main/Project/models) folder.
 
 ## Models
 
-In principal, Neural Painter could consist of two models only: [gan.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/gan.ipynb) and [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb). However, throughout the project evolvement **3 important conceptual decisions** have been taken, and [generator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/generator.ipynb) and [discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb) present one of them: ***Transfer Learning***.
+In principal, Neural Painter could consist of two models only: [gan.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/gan.ipynb) and [paint_image.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/paint_image.ipynb). However, throughout the project evolvement **3 important conceptual decisions** have been taken, and [generator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/generator.ipynb) and [discriminator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/discriminator.ipynb) present one of them: ***Transfer Learning***.
 ___
 
 ***Concept 1: Transfer Learning***
@@ -92,7 +92,7 @@ ___
 ### Model 1: Generator
 
 #### Code and best learnt weights: 
-[generator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/generator.ipynb), [generator parameters](https://github.com/Olllga/DM_project/blob/main/models/generator_5152w_15e_1d_best.pth). 
+[generator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/generator.ipynb), [generator parameters](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/models/generator_5152w_15e_1d_best.pth). 
 
 #### Architecture
 
@@ -120,7 +120,7 @@ ___
 
 **Realization:** *Feature Reconstruction Loss* + Style Reconstruction Loss + Pixel Loss.
 
-**Reference:** [Perceptual Loss Paper](https://github.com/Olllga/DM_project/blob/main/materials/Perceptual%20Loss%20Paper.pdf).
+**Reference:** [Perceptual Loss Paper](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/materials/Perceptual%20Loss%20Paper.pdf).
 
 ___
 
@@ -141,7 +141,7 @@ ___
 ### Model 2: Discriminator
 
 #### Code and best learnt weights: 
-[discriminator.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/discriminator.ipynb), [discriminator parameters](https://github.com/Olllga/DM_project/blob/main/models/discriminator_2022-02-16%2021_27_00_10e_877seed.pth).
+[discriminator.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/discriminator.ipynb), [discriminator parameters](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/models/discriminator_2022-02-16%2021_27_00_10e_877seed.pth).
 
 #### Architecture
 
@@ -168,7 +168,7 @@ ___
 ### Model 3: GAN
 
 #### Code and best learnt weights: 
-[gan.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/gan.ipynb), [GAN generator parameters](https://github.com/Olllga/DM_project/blob/main/models/GAN_generator_2022-02-16%2023_25_53.817520_5e.pth), [GAN discriminator parameters](https://github.com/Olllga/DM_project/blob/main/models/GAN_discriminator_2022-02-16%2023_25_54.824056_5e.pth). 
+[gan.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/gan.ipynb), [GAN generator parameters](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/models/GAN_generator_2022-02-16%2023_25_53.817520_5e.pth), [GAN discriminator parameters](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/models/GAN_discriminator_2022-02-16%2023_25_54.824056_5e.pth). 
 
 #### Architecture
 
@@ -216,7 +216,7 @@ In the first versions of the project, there was the slight **smoothing effect:**
 ### Model 4: Painter
 
 #### Code: 
-[paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb).
+[paint_image.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/paint_image.ipynb).
 
 Before start of training of the painter agent itself, some mechanism for **Blending** is needed.
 
@@ -280,7 +280,7 @@ However, when satisfied with constraints on the input and output domains, the re
 
 ### Video Gallery
 
-Finally, we can follow the process of painting. All the generated videos can be found in ```.mp4``` format in the corresponding folder: [```videos/```](https://github.com/Olllga/DM_project/tree/main/videos).
+Finally, we can follow the process of painting. All the generated videos can be found in ```.mp4``` format in the corresponding folder: [```videos/```](https://github.com/olga-sorokoletova/Data-Mining/tree/main/Project/videos).
 
 #### Progress of the final canvas with a training time
 
@@ -302,7 +302,7 @@ Finally, we can follow the process of painting. All the generated videos can be 
   <img src="./videos/painting stroke by stroke/vanc_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/castle_final1.gif" width="128" height="64"/>
 </p>
 
-For the further insights please refer the printed history in [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb).
+For the further insights please refer the printed history in [paint_image.ipynb](https://github.com/olga-sorokoletova/Data-Mining/blob/main/Project/scripts/paint_image.ipynb).
 
 ### Log Tables
 
