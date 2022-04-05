@@ -15,13 +15,13 @@ The core idea behind the Neural Painters technology is to provide **the painter 
 The following **4 source images** have been used for testing of the built models and experimenting with the results:
 
 <p align="center">
-  <img src="/images/source_images/vanc.jpg" width="247" height="151"/><img src="/images/source_images/louvre.png" width="190" height="151"/> <img src="/images/source_images/eiffel.jpeg" width="151" height="151"/> <img src="/images/source_images/castle.png" width="151" height="151"/> 
+  <img src="./images/source_images/vanc.jpg" width="247" height="151"/><img src="./images/source_images/louvre.png" width="190" height="151"/> <img src="./images/source_images/eiffel.jpeg" width="151" height="151"/> <img src="./images/source_images/castle.png" width="151" height="151"/> 
 </p>
 
 ```Output: painting of this image by brushstrokes```.
 
 <p align="center">
-  <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
+  <img src="./videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
 </p>
 
 ### Dataset
@@ -49,7 +49,7 @@ From the semantical point of view given action realizes given stroke, and
 Examples of the stroke images are printed below:
 
 <p align="center">
-  <img src="/images/readme_images/dataset_examples.png" width="640" height="320"/>
+  <img src="./images/readme_images/dataset_examples.png" width="640" height="320"/>
 </p>
 
 ### Implementation
@@ -101,7 +101,7 @@ ___
 ```Output: generated images of brushstrokes```.
 
 <p align="center">
-  <img src="/images/readme_images/block_schemes/generator.png" width="574" height="535"/>
+  <img src="./images/readme_images/block_schemes/generator.png" width="574" height="535"/>
 </p>
 
 - **Generator block:** fully-connnected layer + CNN, where all non-residual convolutional layers are followed by spatial
@@ -129,13 +129,13 @@ ___
 ##### Generated Strokes
 
 <p align="center">
-  <img src="/images/gen_strokes_images/generator_2022-02-16 23_49_00_15e_4seed (1).png" width="1024" height="513"/>
+  <img src="./images/gen_strokes_images/generator_2022-02-16 23_49_00_15e_4seed (1).png" width="1024" height="513"/>
 </p>
 
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/generator_15e_4seed.png" width="376" height="278"/>
+  <img src="./images/loss_plots/generator_15e_4seed.png" width="376" height="278"/>
 </p>
 
 ### Model 2: Discriminator
@@ -150,7 +150,7 @@ ___
 ```Output: class prediction (0/1: fake/true)```.
 
 <p align="center">
-  <img src="/images/readme_images/block_schemes/discriminator.png" width="906" height="538"/>
+  <img src="./images/readme_images/block_schemes/discriminator.png" width="906" height="538"/>
 </p>
 
 - **Generator block:** pre-trained Model 1 with freezed weights.
@@ -162,7 +162,7 @@ ___
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/discriminator_2022-02-16 21_27_00_10e_877seed.png" width="390" height="278"/>
+  <img src="./images/loss_plots/discriminator_2022-02-16 21_27_00_10e_877seed.png" width="390" height="278"/>
 </p>
 
 ### Model 3: GAN
@@ -183,7 +183,7 @@ Unlike a regular GAN, we **do not inject noise** into the input of the Generator
 ```Discriminator Output: class prediction (0/1: fake/true)```.
 
 <p align="center">
-  <img src="/images/readme_images/block_schemes/gan.png" width="960" height="540"/>
+  <img src="./images/readme_images/block_schemes/gan.png" width="960" height="540"/>
 </p>
 
 - **Generator block:** pre-trained Model 1.
@@ -196,7 +196,7 @@ Unlike a regular GAN, we **do not inject noise** into the input of the Generator
 ##### Generated Strokes
 
 <p align="center">
-  <img src="/images/gen_strokes_images/GAN_generator_2e.jpeg" width="1082" height="192"/>
+  <img src="./images/gen_strokes_images/GAN_generator_2e.jpeg" width="1082" height="192"/>
 </p>
 
 The quality of the generated strokes is good and model is **able to capture the irregularities**. 
@@ -204,13 +204,13 @@ The quality of the generated strokes is good and model is **able to capture the 
 In the first versions of the project, there was the slight **smoothing effect:** instead of accurately recreating the dotted texture of the larger brushstrokes, the GAN choose to smooth them out. Depending on the application this can be or not to be a problematic nuance. The problem was addressed introducing penalty for the Discriminator.
 
 <p align="center">
-  <img src="/images/gen_strokes_images/GAN_generator_2022-02-16 23_25_55.213994_5e.png" width="1157" height="383"/>
+  <img src="./images/gen_strokes_images/GAN_generator_2022-02-16 23_25_55.213994_5e.png" width="1157" height="383"/>
 </p>
 
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/2022-02-16 23_25_55.213994_5e_4seed.png" width="390" height="278"/>
+  <img src="./images/loss_plots/2022-02-16 23_25_55.213994_5e_4seed.png" width="390" height="278"/>
 </p>
 
 ### Model 4: Painter
@@ -235,7 +235,7 @@ ___
 Examples of the blended stroke images (32 dataset samples) are printed below:
 
 <p align="center">
-  <img src="/images/painted_images/blending.png" width="512" height="256"/>
+  <img src="./images/painted_images/blending.png" width="512" height="256"/>
 </p>
 
 ___
@@ -247,7 +247,7 @@ ___
 ```Output: stroke-by-stroke painting for the source image```.
 
 <p align="center">
-  <img src="/images/readme_images/block_schemes/paint.png" width="562" height="534"/>
+  <img src="./images/readme_images/block_schemes/paint.png" width="562" height="534"/>
 </p>
 
 - **Generator block:** loaded Generator from the Model 3.
@@ -259,17 +259,17 @@ ___
 ##### Painted Images
 
 <p align="center">
-  <img src="/images/painted_images/painted_vanc_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_louvre_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_eiffel_50s_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_castle_50s_3000e_4seed.png" width="64" height="64"/>
+  <img src="./images/painted_images/painted_vanc_50s_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_louvre_50s_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_eiffel_50s_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_castle_50s_3000e_4seed.png" width="64" height="64"/>
 </p>
 
 <p align="center">
-  <img src="/images/painted_images/painted_vanc_2022-02-17 03_05_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_louvre_2022-02-17 03_13_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_eiffel_2022-02-17 03_20_00_3000e_4seed.png" width="64" height="64"/><img src="/images/painted_images/painted_castle_2022-02-17 03_28_00_3000e_4seed.png" width="64" height="64"/>
+  <img src="./images/painted_images/painted_vanc_2022-02-17 03_05_00_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_louvre_2022-02-17 03_13_00_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_eiffel_2022-02-17 03_20_00_3000e_4seed.png" width="64" height="64"/><img src="./images/painted_images/painted_castle_2022-02-17 03_28_00_3000e_4seed.png" width="64" height="64"/>
 </p>
 
 ##### Train Loss
 
 <p align="center">
-  <img src="/images/loss_plots/paint_2022-02-17 03_28_00_3000e_4seed.png" width="393" height="278"/>
+  <img src="./images/loss_plots/paint_2022-02-17 03_28_00_3000e_4seed.png" width="393" height="278"/>
 </p>
 
 ## Conclusion
@@ -285,21 +285,21 @@ Finally, we can follow the process of painting. All the generated videos can be 
 #### Progress of the final canvas with a training time
 
 <p align="center">
-  <img src="/videos/training canvas evolution/vanc_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/louvre_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/eiffel_train.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/castle_train.gif" width="128" height="64"/>
+  <img src="./videos/training canvas evolution/vanc_train.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/louvre_train.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/eiffel_train.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/castle_train.gif" width="128" height="64"/>
 </p>
 
 <p align="center">
-  <img src="/videos/training canvas evolution/vanc_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/louvre_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/eiffel_train1.gif" width="128" height="64"/>   <img src="/videos/training canvas evolution/castle_train1.gif" width="128" height="64"/>
+  <img src="./videos/training canvas evolution/vanc_train1.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/louvre_train1.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/eiffel_train1.gif" width="128" height="64"/>   <img src="./videos/training canvas evolution/castle_train1.gif" width="128" height="64"/>
 </p>
 
 #### Painting evolution of the final canvas of each source image in a stroke-by-stroke fashion
 
 <p align="center">
-  <img src="/videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
+  <img src="./videos/painting stroke by stroke/vanc_final.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/louvre_final.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/eiffel_final.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/castle_final.gif" width="128" height="64"/>
 </p>
 
 <p align="center">
-  <img src="/videos/painting stroke by stroke/vanc_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="/videos/painting stroke by stroke/castle_final1.gif" width="128" height="64"/>
+  <img src="./videos/painting stroke by stroke/vanc_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/louvre_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/eiffel_final1.gif" width="128" height="64"/>   <img src="./videos/painting stroke by stroke/castle_final1.gif" width="128" height="64"/>
 </p>
 
 For the further insights please refer the printed history in [paint_image.ipynb](https://github.com/Olllga/DM_project/blob/main/scripts/paint_image.ipynb).
