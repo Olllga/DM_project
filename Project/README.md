@@ -79,7 +79,7 @@ ___
 
 ***Concept 1: Transfer Learning***
 
-**Idea:** The underlined idea of Transfer Learning techniique is that model can be *pre-trained on a related task* and then loaded to a given task with already learnt parameters, and then only fine-tuning to adapt to an original task is needed. 
+**Idea:** The underlined idea of Transfer Learning technique is that model can be *pre-trained on a related task* and then loaded to a given task with already learnt parameters, and then only fine-tuning to adapt to an original task is needed. 
 
 **Motivation:** Training GAN is typically expensive in a sense of time and memory consumption, and therefore *needs to be accelerated*/performed in optimal way. This is especially demanding in a situation when *resources are limited*, such as performing training using Google Colab, where users are allocated with a temporal token on GPU.
 
