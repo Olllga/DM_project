@@ -4,6 +4,8 @@ This is the repository folder with the project proposed for the course of *Data 
 
 This work is centered on the idea of **Intrinsic Style Transfer** from the paper by [Reiichiro Nakano, **"Neural Painters: A learned differentiable constraint for generating brushstroke paintings"** (2019)](https://arxiv.org/abs/1904.08410) and [**MyPaintBrushstrokes**](https://www.kaggle.com/reiinakano/mypaint_brushstrokes) dataset.
 
+Implemented using PyTorch.
+
 ## Introduction
 
 While working on a **painting-like image generation**, authors of the reference paper aim to achieve the best possible level of **naturality** in this process. The most of the other state-of-the-art techniques do not focus on naturality and therefore do not provide this desired property, because they generate images by having a network directly calculate the RGB value of each pixel. However, artists don’t paint by generating each individual pixel, they paint by generating brushstrokes.
