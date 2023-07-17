@@ -153,7 +153,7 @@ ___
   <img src="./images/readme_images/block_schemes/discriminator.png" width="906" height="538"/>
 </p>
 
-- **Generator block:** pre-trained Model 1 with freezed weights.
+- **Generator block:** pre-trained Model 1 with frozen weights.
 - **Discriminator block:** CNN.
 - **BCE loss:** Binary Cross-Entropy.
 
